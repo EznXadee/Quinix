@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.logo{
+  height: 50px;
+}
+#about-image{
+  border-radius: 100%;
+  width: 250px;
+  height: 250px;
+  padding: 2rem;
+}
+.card__title{
+  padding: 20px;
+}
+#services .main-container {
+  padding: 30px;
+}
+
+/* HEADING */
+
+#services .heading {
+  text-align: center;
+}
+
+#services .heading__title {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #333;}
+
+#services .heading__credits {
+  margin: 10px 0px;
+  color: #888888;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+
+#services .heading__link {
+  text-decoration: none;
+}
+
+#services .heading__credits .heading__link {
+  color: inherit;
+}
+
+/* CARDS */
+
+#services .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#services .card {
+  margin: 20px;
+  padding: 20px;
+  width: 500px;
+  min-height: 200px;
+  display: grid;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+}
+
+#services .card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+
+#services .card__link,
+#services .card__exit,
+#services .card__icon {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#services .card__link::after {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: all 0.5s;
+}
+
+#services .card__link:hover::after {
+  width: 100%;
+}
+
+#services .card__exit {
+  grid-row: 1/2;
+  justify-self: end;
+}
+
+#services .card__icon {
+  grid-row: 2/3;
+  font-size: 30px;
+}
+
+#services .card__title {
+  grid-row: 3/4;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+#services .card__apply {
+  grid-row: 4/5;
+  align-self: center;
+}
+
+/* CARD BACKGROUNDS */
+
+#services .card-1 {
+  background: radial-gradient(  rgb(0, 204, 136), rgb(0, 204, 136));
+}
+
+#services .card-2 {
+  background: radial-gradient(#222222, #222222);
+}
+
+#services .card-3 {
+  background: radial-gradient(#003C71, #003C71);
+}
+
+#services .card-4 {
+  background: radial-gradient(  #dc584c,   #dc584c);
+}
+
+#services .card-5 {
+  background: radial-gradient(#0073aa, #0073aa);
+}
+
+#services .card-6 {
+  background: radial-gradient(#FA2A55, #FA2A55);
+}
+
+@media (max-width: 1600px) {
+  #services .cards {
+    justify-content: center;
+  }
+}
