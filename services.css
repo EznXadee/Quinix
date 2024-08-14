@@ -80,14 +80,19 @@ body {
   transform: scale(1.01);
 }
 
-#services .card__link,
+
 #services .card__exit,
 #services .card__icon {
   position: relative;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
 }
-
+#services .card__link{
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+}
 #services .card__link::after {
   position: absolute;
   top: 25px;

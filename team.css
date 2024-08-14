@@ -6,10 +6,10 @@
 }
 
 #team-header-1 {
-    font-size: 4.5rem;
+    font-size: 4.5rem !important;
     font-weight: 700;
     color: #333;
-    margin-bottom: 0px !important;
+    margin-bottom: 1rem !important;
     padding-top: 4rem;
     padding-bottom: 0px !important;
 }
@@ -112,19 +112,23 @@
 
 /* Responsive Behavior: Hide the last card if it doesn't fit */
 @media (max-width: 1200px) {
-    #team-section .container .card:nth-last-child(1) {
-        display: none;
+    #team-section .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Create 2 equal columns */
+      grid-template-rows: repeat(1, 1fr); 
     }
 }
-@media (max-width: 900px) {
-    #team-section .container .card:nth-last-child(2) {
-        display: none;
+@media (max-width: 970px) {
+    #team-section .container {
+      grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+      grid-template-rows: repeat(2, 1fr); 
     }
 }
 
 /* Hide the second card at max-width 500px */
-@media (max-width: 500px) {
-    #team-section .container .card:nth-child(2) {
-        display: none;
+@media (max-width: 640px) {
+    #team-section .container{
+        grid-template-columns: repeat(1, 1fr); /* Create 2 equal columns */
+        grid-template-rows: repeat(4, 1fr); 
     }
 }

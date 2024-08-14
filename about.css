@@ -18,7 +18,7 @@
 }
 
 #about-header-1 {
-    font-size: 4rem;
+    font-size: 4.5rem !important;
     font-weight: 700;
     margin-bottom: 1rem;
     color: #333; /* Dark color for contrast */
