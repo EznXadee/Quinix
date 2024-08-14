@@ -99,7 +99,6 @@
 @media screen and (max-width: 600px) {
     #hero-margin {
         align-items: center; /* Center align horizontally */
-        margin-top: 4rem;
     }
 
     #hero-section h1 {
