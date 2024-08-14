@@ -10,3 +10,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// Select the hamburger button and the sidebar menu
+const hamBurger = document.getElementById('ham-burger');
+const sideBarMenu = document.getElementById('sidebar-menu');
+
+// Add an event listener to the hamburger button
+hamBurger.addEventListener('click', () => {
+    // Toggle the 'show' class on the sidebar menu
+    sideBarMenu.classList.toggle('show');
+});

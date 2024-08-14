@@ -155,3 +155,9 @@ body {
     justify-content: center;
   }
 }
+@media (max-width: 550px) {
+  #services .card {
+    width: 100%; /* Reduce the card width to 100% of the container */
+    margin: 10px 0; /* Adjust margins to make them consistent */
+  }
+}
