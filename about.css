@@ -56,7 +56,8 @@
     }
 
     #about-subcontainer {
-        flex-direction: column; /* Stack text and image vertically on small screens */
+        flex-direction: column;
+        max-width: 500px; /* Stack text and image vertically on small screens */
     }
 
     #about-image {

@@ -9,126 +9,173 @@
     font-size: 4.5rem !important;
     font-weight: 700;
     color: #333;
-    margin-bottom: 1rem !important;
+    margin-bottom: 2rem !important;
     padding-top: 4rem;
     padding-bottom: 0px !important;
 }
 
-#team-section .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    width: 100%;
-    max-width: 1280px;
-    margin: 0 auto !important;
-    padding: 0;
-    justify-items: center;
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap');
+
+*, *:after, *:before {
+    box-sizing: border-box;
 }
 
-#team-section .border {
-    height: 369px;
-    width: 290px;
-    background: transparent;
+body {
+    font-family: "Lexend", sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #393232;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+#team-section .card-list {
+    width: 90%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px; /* Space between grid items */}
+
+#team-section .card {
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 20px 50px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 1.25rem;
+    position: relative;
+    transition: 0.15s ease-in;
+}
+
+#team-section .card:hover, #team-section .card:focus-within {
+    box-shadow: 0 0 0 2px #16c79a, 0 10px 60px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+#team-section .card-image {
     border-radius: 10px;
-    transition: border 1s;
+    overflow: hidden;
+    height: 270px; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.para-projects{
+  padding-top: 5px;
+}
+#team-section .card-image img {
+    height: 100%;
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area while maintaining its aspect ratio */
+}
+
+
+#team-section .card-header {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: relative;
 }
 
-#team-section .border:hover {
-    border: 1px solid white;
+#team-section .card-header a {
+    font-weight: 600;
+    font-size: 1.375rem;
+    line-height: 1.25;
+    padding-right: 1rem;
+    text-decoration: none;
+    color: inherit;
+    will-change: transform;
 }
 
-#team-section .card {
-    height: 379px;
-    width: 300px;
-    background: grey;
-    border-radius: 10px;
-    transition: background 0.8s;
-    overflow: hidden;
-    background: black;
-    box-shadow: 0 70px 63px -60px #000000;
+#team-section .card-header a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#team-section .icon-button {
+    border: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    flex-shrink: 0;
+    font-size: 1.25rem;
+    transition: 0.25s ease;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    cursor: pointer;
+    color: #565656;
 }
 
-#team-section .card0 {
-    background: url('https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg') center center no-repeat;
-    background-size: 300px;
+#team-section .icon-button svg {
+    width: 1em;
+    height: 1em;
 }
 
-#team-section .card0:hover {
-    background: url('https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg') left center no-repeat;
-    background-size: 600px;
-}
-
-#team-section .card1 {
-    background: url('https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg') center center no-repeat;
-    background-size: 300px;
-}
-
-#team-section .card1:hover {
-    background: url('https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg') left center no-repeat;
-    background-size: 600px;
-}
-
-#team-section .card2 {
-    background: url('https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg') center center no-repeat;
-    background-size: 300px;
-}
-
-#team-section .card2:hover {
-    background: url('https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg') left center no-repeat;
-    background-size: 600px;
-}
-
-#team-section h2 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: white;
-    margin: 20px;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-#team-section .fa {
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-#team-section .icons {
-    position: absolute;
-    fill: #fff;
+#team-section .icon-button:hover, #team-section .icon-button:focus {
+    background-color: #ec4646;
     color: #fff;
-    height: 130px;
-    top: 226px;
-    width: 50px;
+}
+
+#team-section .card-footer {
+    margin-top: 1.25rem;
+    border-top: 1px solid #ddd;
+    padding-top: 1.25rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-/* Responsive Behavior: Hide the last card if it doesn't fit */
-@media (max-width: 1200px) {
-    #team-section .container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); /* Create 2 equal columns */
-      grid-template-rows: repeat(1, 1fr); 
-    }
-}
-@media (max-width: 970px) {
-    #team-section .container {
-      grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
-      grid-template-rows: repeat(2, 1fr); 
-    }
+#team-section .card-meta {
+    display: flex;
+    align-items: center;
+    color: #787878;
 }
 
-/* Hide the second card at max-width 500px */
-@media (max-width: 640px) {
-    #team-section .container{
-        grid-template-columns: repeat(1, 1fr); /* Create 2 equal columns */
-        grid-template-rows: repeat(4, 1fr); 
+#team-section .card-meta:first-child:after {
+    display: block;
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: currentColor;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+#team-section .card-meta svg {
+    flex-shrink: 0;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.25em;
+}
+@media screen and (max-width: 900px) {
+    #team-section .card-list{
+        grid-template-columns: repeat(2, 1fr); /* 3 columns */
+        grid-template-rows: repeat(2, 1fr); /* 3 columns */
+
+    }
+}
+@media screen and (max-width: 800px) {
+    #team-section .card-list{
+        grid-template-columns: repeat(1, 1fr); /* 3 columns */
+        grid-template-rows: repeat(3, 1fr); /* 3 columns */
+
     }
 }

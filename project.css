@@ -3,19 +3,20 @@
 #project-section {
     background-image: url('projectbackground.jpg');
     width: 100%;
-    height: 700px;
+    height: 800px;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 9rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 #project-header {
     font-size: 4.5rem;
     color: white;
-    padding-top: 2.5rem;
+    padding-top: 3.5rem !important;
+    padding-left: 1rem !important;
 }
 
 #project-header-2 {
@@ -43,6 +44,8 @@
     width: 100%;
     position: relative;
     padding: 0 20px; /* Padding to ensure space on the sides */
+    margin-bottom: 2.3rem !important;
+    margin-top: 0px;
 }
 
 #project-section .wrapper i {
@@ -89,7 +92,7 @@
 
 #project-section .wrapper .carousel .card {
     scroll-snap-align: start;
-    height: 342px;
+    height: 362px;
     list-style: none;
     background: #fff;
     cursor: pointer;
@@ -99,7 +102,7 @@
 }
 
 #project-section .wrapper .carousel .card .img {
-    background: #c7c7c7;
+    background: #000000;
     height: 148px;
     width: 148px;
     border-radius: 50%;
@@ -134,4 +137,5 @@
     #project-section .wrapper .carousel {
         grid-auto-columns: 100%;
     }
+  
 }
