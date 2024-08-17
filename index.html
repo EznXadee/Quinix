@@ -288,12 +288,12 @@
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript">
   (function() {
-    emailjs.init("YOUR_PUBLIC_KEY");
+    emailjs.init("jhhnb1f90Hbxv7xYR");
   })();
 
   document.getElementById('form').onsubmit = function(event) {
     event.preventDefault();
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    emailjs.sendForm('service_fophl0t', 'template_5xkfbbo', this)
       .then(function() {
         alert('Message sent successfully!');
       }, function(error) {
