@@ -2,7 +2,9 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-
+#Quinix-logo-tab{
+    border-radius: 50%;
+}
 body {
     margin: 0;
     padding: 0;

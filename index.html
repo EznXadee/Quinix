@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Qunix | Innovating Today, Shaping Tomorrow, Building Forever</title>
+    <title>Quinix | Innovating Today, Shaping Tomorrow, Building Forever</title>
+    <link rel="icon" href="/Quinix logo .png" type="image/x-icon" id="Quinix-logo-tab">
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -29,10 +30,11 @@
                     </div>
                     <div>
                         <a href="#">Home</a>
-                        <a href="#about-section">About</a>
-                        <a href="#team-section">Projects</a>
-                        <a href="#project-section">Team</a>
-                        <a href="#contact-section">Contact</a>
+                        <a href="#services">Services</a>
+                        <a href="#about">About</a>
+                        <a href="#project">Projects</a>
+                        <a href="#team">Team</a>
+                        <a href="#contact">Contact</a>
                     </div>
                     
                     <button class="ham-burger" id="ham-burger">
@@ -44,15 +46,16 @@
                       <i class="fa-solid fa-bars"></i>
                   </button> -->
                       <a href="#">Home</a>
-                      <a href="#about-section">About</a>
-                      <a href="#team-section">Projects</a>
-                      <a href="#project-section">Team</a>
-                      <a href="#contact-section">Contact</a>
+                      <a href="#services">Services</a>
+                      <a href="#about">About</a>
+                      <a href="#project">Projects</a>
+                      <a href="#team">Team</a>
+                      <a href="#contact">Contact</a>
                   </div>
                   
                 </nav>
             </section>
-            <section id="hero-section">
+            <section id="hero">
                 <div id="hero-margin">
                 <h1>Ideas That Drive 
                 </h1>
@@ -116,7 +119,7 @@
                 </div>
               </div>
             </section>
-            <section id="about-section">
+            <section id="about">
                 <div id="about-content">
                     <h1 id="about-header-1">Our Story</h1>
                     <div id="about-subcontainer">
@@ -130,7 +133,7 @@
                     </div>
                 </div>
             </section>
-            <section id="team-section">
+            <section id="team">
                 <h1 id="team-header-1">Projects</h1>
                 <div class="card-list">
                   <article class="card">
@@ -184,7 +187,7 @@
                 </div>
             </section>
             
-            <section id="project-section">
+            <section id="project">
               <h1 id="project-header">Meet The Team</h1>
               <div class="wrapper">
                 <ul class="carousel">
@@ -222,7 +225,7 @@
            <section id="services">
             
            </section>
-         <section id="contact-section">
+         <section id="contact">
         <h1 id="contact-section-header">Contact Us</h1>
         <div id="contact-divider">
           <div className="contact-child">
@@ -281,6 +284,23 @@
               ></textarea>
               <button type="submit">Send Message</button>
             </form>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function() {
+    emailjs.init("YOUR_PUBLIC_KEY");
+  })();
+
+  document.getElementById('form').onsubmit = function(event) {
+    event.preventDefault();
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+      .then(function() {
+        alert('Message sent successfully!');
+      }, function(error) {
+        alert('Failed to send message: ' + error.text);
+      });
+  };
+</script>
           </div>
         </div>
       </section>      
@@ -294,16 +314,17 @@
                 </section>
                 <section id="s2">
                     <h1>Quick Links</h1>
-                    <a href="#about-section">About</a>
-                    <a href="#team-section">Team</a>
-                    <a href="#project-section">Projects</a>
-                    <a href="#contact-section">Contact</a>
+                    <a href="#services">Services</a>
+                    <a href="#about">About</a>
+                    <a href="#team">Team</a>
+                    <a href="#project">Projects</a>
+                    <a href="#contact">Contact</a>
                 </section>
                 <section id="s3">
                     <h1>Projects</h1>
-                    <a href="#">Care AI</a>
                     <a href="#">NeuroFlow</a>
-                    <a href="#">QuizCore</a>
+                    <a href="#">Reddit Clone</a>
+                    <a href="#">Data Nesting</a>
                 </section>
                 <section id="s4">
                     <div class="social-links">

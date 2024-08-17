@@ -1,4 +1,4 @@
-#team-section {
+#team {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,14 +37,14 @@ img {
     display: block;
 }
 
-#team-section .card-list {
+#team .card-list {
     width: 90%;
     max-width: 1400px;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 30px; /* Space between grid items */}
 
-#team-section .card {
+#team .card {
     background-color: #fff;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 20px 50px 0 rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -54,12 +54,12 @@ img {
     transition: 0.15s ease-in;
 }
 
-#team-section .card:hover, #team-section .card:focus-within {
+#team .card:hover, #team-section .card:focus-within {
     box-shadow: 0 0 0 2px #16c79a, 0 10px 60px 0 rgba(0, 0, 0, 0.1);
     transform: translateY(-5px);
 }
 
-#team-section .card-image {
+#team .card-image {
     border-radius: 10px;
     overflow: hidden;
     height: 270px; /* Adjust height as needed */
@@ -71,14 +71,14 @@ img {
 .para-projects{
   padding-top: 5px;
 }
-#team-section .card-image img {
+#team .card-image img {
     height: 100%;
     width: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure the image covers the area while maintaining its aspect ratio */
 }
 
 
-#team-section .card-header {
+#team .card-header {
     margin-top: 1.5rem;
     display: flex;
     align-items: center;
@@ -86,7 +86,7 @@ img {
     position: relative;
 }
 
-#team-section .card-header a {
+#team .card-header a {
     font-weight: 600;
     font-size: 1.375rem;
     line-height: 1.25;
@@ -96,7 +96,7 @@ img {
     will-change: transform;
 }
 
-#team-section .card-header a:after {
+#team .card-header a:after {
     content: "";
     position: absolute;
     left: 0;
@@ -105,7 +105,7 @@ img {
     bottom: 0;
 }
 
-#team-section .icon-button {
+#team .icon-button {
     border: 0;
     background-color: #fff;
     border-radius: 50%;
@@ -123,17 +123,17 @@ img {
     color: #565656;
 }
 
-#team-section .icon-button svg {
+#team .icon-button svg {
     width: 1em;
     height: 1em;
 }
 
-#team-section .icon-button:hover, #team-section .icon-button:focus {
+#team .icon-button:hover, #team-section .icon-button:focus {
     background-color: #ec4646;
     color: #fff;
 }
 
-#team-section .card-footer {
+#team .card-footer {
     margin-top: 1.25rem;
     border-top: 1px solid #ddd;
     padding-top: 1.25rem;
@@ -142,13 +142,13 @@ img {
     flex-wrap: wrap;
 }
 
-#team-section .card-meta {
+#team .card-meta {
     display: flex;
     align-items: center;
     color: #787878;
 }
 
-#team-section .card-meta:first-child:after {
+#team .card-meta:first-child:after {
     display: block;
     content: "";
     width: 4px;
@@ -159,21 +159,21 @@ img {
     margin-right: 0.75rem;
 }
 
-#team-section .card-meta svg {
+#team .card-meta svg {
     flex-shrink: 0;
     width: 1em;
     height: 1em;
     margin-right: 0.25em;
 }
 @media screen and (max-width: 900px) {
-    #team-section .card-list{
+    #team .card-list{
         grid-template-columns: repeat(2, 1fr); /* 3 columns */
         grid-template-rows: repeat(2, 1fr); /* 3 columns */
 
     }
 }
 @media screen and (max-width: 800px) {
-    #team-section .card-list{
+    #team .card-list{
         grid-template-columns: repeat(1, 1fr); /* 3 columns */
         grid-template-rows: repeat(3, 1fr); /* 3 columns */
 
